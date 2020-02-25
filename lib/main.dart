@@ -105,6 +105,7 @@ class HomePage extends StatelessWidget {
                     ),
                     child: Column(
                       children: <Widget>[
+
                         Container(
                           padding: EdgeInsets.all(8.0),
                           decoration: BoxDecoration(
@@ -119,7 +120,21 @@ class HomePage extends StatelessWidget {
                               )
                             ),
                           ),
-                        )
+                        ),
+
+                        Container(
+                          padding: EdgeInsets.all(8.0),
+                          child: TextField(
+                            decoration: InputDecoration(
+                              border: InputBorder.none,
+                              hintText: "Password",
+                              hintStyle: TextStyle(
+                                color: Colors.grey[400]
+                              )
+                            ),
+                          ),
+                        ),
+
                       ],
                     ),
                   )
