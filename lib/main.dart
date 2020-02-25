@@ -20,8 +20,21 @@ class HomePage extends StatelessWidget {
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('assets/images/background.png'),
-                  
+                  fit: BoxFit.fill // -> completa o espaço em branco na parte de cima.
                 )
+              ),
+              child: Stack(
+                children: <Widget>[
+                  Positioned(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage('assets/images/light-1.png')
+                        )
+                      ),
+                    ),
+                  )
+                ],
               ),
             )
           ],
