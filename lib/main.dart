@@ -31,26 +31,26 @@ class HomePage extends StatelessWidget {
                     left: 30,
                     width: 80,
                     height: 200,
-                    child: Container(
+                    child: FadeAnimation(1, Container(
                       decoration: BoxDecoration(
                         image: DecorationImage(
                           image: AssetImage('assets/images/light-1.png')
                         )
                       ),
-                    ),
+                    )),
                   ),
 
                   Positioned(
                     left: 140,
                     width: 80,
                     height: 150,
-                    child: Container(
+                    child: FadeAnimation(1.3, Container(
                       decoration: BoxDecoration(
                         image: DecorationImage(
                           image: AssetImage('assets/images/light-2.png')
                         )
                       ),
-                    ),
+                    )),
                   ),
 
                   Positioned(
@@ -58,17 +58,17 @@ class HomePage extends StatelessWidget {
                     top: 40,
                     width: 80,
                     height: 150,
-                    child: Container(
+                    child: FadeAnimation(1.5, Container(
                       decoration: BoxDecoration(
                         image: DecorationImage(
                           image: AssetImage('assets/images/clock.png')
                         )
                       ),
-                    ),
+                    )),
                   ),
 
                   Positioned(
-                    child: Container(
+                    child: FadeAnimation(1.6, Container(
                       margin: EdgeInsets.only(top: 50),
                       child: Center(
                         child: Text(
@@ -80,7 +80,7 @@ class HomePage extends StatelessWidget {
                           ),
                         ),
                       ),
-                    ),
+                    )),
                   ),
 
                 ],
@@ -91,7 +91,7 @@ class HomePage extends StatelessWidget {
               padding: EdgeInsets.only(top: 0, left: 30, right: 30, bottom: 30),
               child: Column(
                 children: <Widget>[
-                  Container(
+                  FadeAnimation(1.8, Container(
                     padding: EdgeInsets.all(5),
                     decoration: BoxDecoration(
                       color: Colors.white,
@@ -138,9 +138,9 @@ class HomePage extends StatelessWidget {
 
                       ],
                     ),
-                  ),
+                  )),
                   SizedBox(height: 30,),
-                  Container(
+                  FadeAnimation(2, Container(
                     height: 50,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
@@ -160,14 +160,14 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                     ),
-                  ),
+                  )),
                   SizedBox(height: 30,),
-                  Text(
+                  FadeAnimation(1.5, Text(
                     "Forgot Password?",
                     style: TextStyle(
                       color: Color.fromRGBO(143, 148, 251, 1),
                     ),
-                  ),
+                  )),
                 ],
               ),
             )
