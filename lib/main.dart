@@ -66,6 +66,21 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
 
+                  Positioned(
+                    child: Container(
+                      child: Center(
+                        child: Text(
+                          "Login",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 40,
+                            fontWeight: FontWeight.bold
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+
                 ],
               ),
             )
