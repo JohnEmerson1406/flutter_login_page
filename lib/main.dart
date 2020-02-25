@@ -26,6 +26,9 @@ class HomePage extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Positioned(
+                    left: 30,
+                    width: 80,
+                    height: 200,
                     child: Container(
                       decoration: BoxDecoration(
                         image: DecorationImage(
@@ -33,7 +36,7 @@ class HomePage extends StatelessWidget {
                         )
                       ),
                     ),
-                  )
+                  ),
                 ],
               ),
             )
