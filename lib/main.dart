@@ -87,7 +87,7 @@ class HomePage extends StatelessWidget {
             ),
 
             Padding(
-              padding: EdgeInsets.all(30.0),
+              padding: EdgeInsets.only(top: 0, left: 30, right: 30, bottom: 30),
               child: Column(
                 children: <Widget>[
                   Container(
@@ -159,7 +159,14 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                     ),
-                  )
+                  ),
+                  SizedBox(height: 30,),
+                  Text(
+                    "Forgot Password?",
+                    style: TextStyle(
+                      color: Color.fromRGBO(143, 148, 251, 1),
+                    ),
+                  ),
                 ],
               ),
             )
